@@ -1,0 +1,221 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&subset=latin-ext');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/create.jpeg);
+}
+
+.create form label {
+    line-height: 30px;
+    font-weight:300; !important;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: top;
+    margin-top: 200px;
+  
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 500px;
+}
+
+.full {
+    width: 600px; !important;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.opis{
+    color: black;
+    text-align: justify;
+}
+
+.demo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+    /*______________________*BUTTONS_________________________*/
+    .box {
+    margin: 1rem;
+    width: 18.75rem;
+}
+
+    .box img {
+        width: 100%;
+    }
+
+.btnWide {
+    border: none;
+    color: white;
+    overflow: hidden;
+    margin: 1rem;
+    padding: 0;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+}
+
+    .btn.color-1 {
+        background-color: #426FC5;
+    }
+
+    .btn.color-2 {
+        background-color: #00897b;
+    }
+
+    .btn.color-3 {
+        background-color: #f6774f;
+    }
+
+    .btn.color-4 {
+        background-color: #f87089;
+    }
+
+.btn-border.color-1 {
+    background-color: transparent;
+    border: 2px solid #426FC5;
+    color: #426FC5;
+}
+
+.btn-border.color-2 {
+    background-color: transparent;
+    border: 2px solid #00897b;
+    color: #00897b;
+}
+
+.btn-border.color-3 {
+    background-color: transparent;
+    border: 2px solid #f6774f;
+    color: #f6774f;
+}
+
+.btn-border.color-4 {
+    background-color: transparent;
+    border: 2px solid #f87089;
+    color: #f87089;
+}
+
+.material-design {
+    position: relative;
+}
+
+
+.btn:hover{
+    opacity: 0.65;
+}
+
+.review textarea {
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    color: black;
+}
+.review input[type="text"] {
+    width: 500px;
+    color: black;
+}
+
+/*---------STARS-------------*/
+@charset "UTF-8";
+
+.star-cb-group {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    /* the hidden clearer */
+}
+
+star-cb-group input{
+    float:left;
+}
+
+.star-cb-group * {
+    font-size: 1rem;
+}
+
+    .star-cb-group > input {
+        display: none;
+    }
+
+        .star-cb-group > input + label {
+            /* only enough room for the star */
+            display: inline-block;
+            overflow: hidden;
+            text-indent: 9999px;
+            width: 1em;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+            .star-cb-group > input + label:before {
+                display: inline-block;
+                text-indent: -9999px;
+                content: "☆";
+                color: #f87089;
+            }
+
+            .star-cb-group > input:checked ~ label:before, .star-cb-group > input + label:hover ~ label:before, .star-cb-group > input + label:hover:before {
+                content: "★";
+                color: #ff6f7d;
+                text-shadow: 0 0 1px #333;
+            }
+
+    .star-cb-group > .star-cb-clear + label {
+        text-indent: -9999px;
+        width: .5em;
+        margin-left: -.5em;
+    }
+
+        .star-cb-group > .star-cb-clear + label:before {
+            width: .5em;
+        }
+
+    .star-cb-group:hover > input + label:before {
+        content: "☆";
+        color: #888;
+        text-shadow: none;
+    }
+
+    .star-cb-group:hover > input + label:hover ~ label:before, .star-cb-group:hover > input + label:hover:before {
+        content: "★";
+        color: #ff2951;
+        text-shadow: 0 0 1px #333;
+    }
+
+:root {
+    font-size: 2em;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+
+#log {
+    margin: 1em auto;
+    width: 5em;
+    text-align: center;
+    background: transparent;
+}
+
+h1 {
+    text-align: center;
+}

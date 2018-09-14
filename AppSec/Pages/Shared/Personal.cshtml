@@ -1,0 +1,33 @@
+﻿@page
+@model AppSec.Pages.PersonalModel
+
+<section>
+    <div class="col-xs-8 ">
+        <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        </p>
+        <div class="jumbotron jumboBrowse">
+            <h2>Znajdź wymarzoną restaurację</h2>
+            <p>Twoja baza restauracji z całego świata.<br /> To ty wybierasz gdzie zjesz</p>
+        </div>
+    </div>
+    <div class="jumbotron col-xs-4 jumboBrowse center">
+        <h4>Nie znalazłeś ulubionej restauracji?</h4>
+        <p> <a asp-action="Create"><button class=" btn btnWide btn-border color-4 material-design" href="#" role="button">Dodaj lokal</button></a></p>
+  
+    </div>
+
+</section>
+
+<div class="container">
+
+    <div class="col-xs-12">
+
+        @foreach (var restaurant in @Model.Restaurants) {
+            @Html.Partial("_Summary", restaurant)
+        }
+
+    </div>
+
+   </div>
+

@@ -1,0 +1,47 @@
+﻿@page "{id}"
+@using AppSec.Pages.Restaurants
+
+@model EditModel
+
+<link rel="stylesheet" href="~/css/partial.css" asp-append-version="true" />
+
+<div class="demo">
+<div class="container outer ">
+    <div class="container middle">
+        <br /><br />
+        <br /><br />
+
+        <div class="inner full">
+            <h1>Edycja @Model.Restaurant.Name</h1>
+            <div class="jumbotron col-xs-4 jumboBrowse inner full create review">
+                <h4>Edytuj restaurację</h4>
+                <p>
+                    <form method="post">
+
+                        <input type="hidden" asp-for="Restaurant.Id" />
+
+                        <div>
+                            <label asp-for="Restaurant.Name">Nazwa lokalu:</label>
+                            <input asp-for="Restaurant.Name" />
+                            <span asp-validation-for="Restaurant.Name"></span>
+                        </div>
+
+                        <textarea asp-for="Restaurant.Description"></textarea>
+
+                        <div>
+                            <label asp-for="Restaurant.Cuisine">Rodzaj serwowanych potraw:</label>
+                            <select asp-for="Restaurant.Cuisine"
+                                    asp-items="@Html.GetEnumSelectList<OdeToFood.Models.CuisineType>()"></select>
+                            <span asp-validation-for="Restaurant.Cuisine"></span>
+                        </div>
+
+                        <input type="submit" name="save" value="Save" class=" btn btnWide btn-border color-4 material-design" />
+                    </form>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
