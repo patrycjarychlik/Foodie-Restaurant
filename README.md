@@ -1,9 +1,9 @@
 # Foodie-Restaurant
 
-Platforma .NET
-App:
-ASP .NET
-Bootstrap
-MySql
-Razor Pages
+Platforma .NET <br>
+<br>Application Stack:<br> <br>
+ASP .NET<br>
+Bootstrap<br>
+MySql<br>
+Razor Pages<br>
 images from: pexels.com
