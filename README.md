@@ -1,6 +1,7 @@
 # Foodie-Restaurant
+Simple application in .NET
 
-Platforma .NET <br>
+.NET Platform <br>
 <br>Application Stack:<br> <br>
 ASP .NET<br>
 Bootstrap<br>
